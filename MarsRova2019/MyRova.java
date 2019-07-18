@@ -7,8 +7,8 @@ public class MyRova{ //my mars rova class
       /* start variable declarations*/
   
       //starting coordinates
-       Integer x = 0;
-       Integer y = 0;
+       static Integer x = 0;
+       static Integer y = 0;
   
        String direction = "N"; //my default direction is north, the rova has to be rovadirection somewhere at the start
       //directions
@@ -20,22 +20,26 @@ public class MyRova{ //my mars rova class
       /* end variable declarations*/
   public static void main(String[] args){
     
+    System.out.print("WELCOME TO MARS ROVA CONTROL \nTO MOVE THE ROVA ENTER THE FOLLOWING COMMANDS \n\n");
+    
+    System.out.print("ENTER 'F' - FRONT \nENTER 'B' - BACK \nENTER 'L' - LEFT \nENTER 'R' - RIGHT \n" );
+    
          Scanner in = new Scanner(System.in); //scanner for taking input from the person controlling 
-          System.out.print("Enter Direction to move Rova, f is front, b is back, l is left,r is right: ");  
+         // System.out.print("Enter Direction to move Rova, f is front, b is back, l is left,r is right: ");  
           
           String direction = in.nextLine(); 
-          String coord = "0,0"; //coordinates for my positioning
+          String coord = String.valueOf(x) +""+ String.valueOf(y); //coordinates for my positioning
           
           
-          if(direction.equals("l")){
+          if(direction.equalsIgnoreCase("l")){
           System.out.println("the Rova moved left " + coord); 
           
-          }else if(direction.equals("r")){
+          }else if(direction.equalsIgnoreCase("r")){
           System.out.println("the Rova moved right at " + coord); 
           
-          }else if(direction.equals("f")){
+          }else if(direction.equalsIgnoreCase("f")){
           System.out.println("the Rova moved front at " + coord); 
-          }else if(direction.equals("b")) {
+          }else if(direction.equalsIgnoreCase("b")) {
           System.out.println("the Rova moved back at " + coord); 
           }else{
           System.out.println("Rova will not move unless you put in the right directions"); 
