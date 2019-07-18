@@ -1,0 +1,22 @@
+TEST CASE SCENARIO 1: USER INTERFACE DISPLAY
+Description: Check whether rover provides interface with instructions and user input
+Expected Result: The system should display instructions for the user on how to use the rover
+Result: Successful
+Pass/Fail: Pass
+
+TEST CASE SCENARIO 1: 
+Description: Check response when valid data is entered into the system (FBLR)
+Expected Result: The system should move the rova in the specified direction and also notify the user of the direction change
+Test Data: Character input of "FFBLR"
+Result: Successful- The rova moved forward 2 times, back 1 time, turned left then right
+Pass/Fail: Pass
+
+TEST CASE SCENARIO 1: 
+Description: Check response when valid data is entered into the system
+Expected Result: The system should move the rova in the specified direction and also notify the user of the direction change
+Test Data: Character input of "FFBLR"
+Result: Successful- The rova moved forward 2 times, back 1 time, turned left then right
+Pass/Fail: Pass
+
+
+
