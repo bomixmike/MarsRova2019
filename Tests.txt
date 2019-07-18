@@ -4,19 +4,26 @@ Expected Result: The system should display instructions for the user on how to u
 Result: Successful
 Pass/Fail: Pass
 
-TEST CASE SCENARIO 1: 
+TEST CASE SCENARIO 1: VALID DATA TEST
 Description: Check response when valid data is entered into the system (FBLR)
-Expected Result: The system should move the rova in the specified direction and also notify the user of the direction change
+Expected Result: The rova should move the rova in the specified direction and also notify the user of the direction change
 Test Data: Character input of "FFBLR"
 Result: Successful- The rova moved forward 2 times, back 1 time, turned left then right
 Pass/Fail: Pass
 
-TEST CASE SCENARIO 1: 
-Description: Check response when valid data is entered into the system
-Expected Result: The system should move the rova in the specified direction and also notify the user of the direction change
-Test Data: Character input of "FFBLR"
-Result: Successful- The rova moved forward 2 times, back 1 time, turned left then right
+TEST CASE SCENARIO 1: INVALID DATA TEST
+Description: Check response when invalid data is entered into the system
+Expected Result: The should inform the user to input data in the correct format
+Test Data: Character input of "rFGH"
+Result: Successful- above such data is not accepted to be run by the rova
 Pass/Fail: Pass
+
+TEST CASE SCENARIO 1: COORDINATES REGISTER (STILL UNDER IMPLEMENTATION)
+Description: Check that the rova tracks its position and coordinates
+Expected Result: The should track its position in its environment
+Test Data: Character input of "FFBLR"
+Result:  The Rova is still returned 0,0 coordinates for its position by the time of doing this test
+Pass/Fail: Fail
 
 
 
