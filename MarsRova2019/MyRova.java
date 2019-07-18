@@ -56,10 +56,11 @@ public class MyRova{ //my mars rova class
             
            
             if(direction =="f" || direction =="r" ||direction =="l" || direction =="b"){
+              System.out.println("Please USE, UPPER CASE controls ONLY!!!"); 
               
-              countEachChar(direction); //method call to count characters
             }else{
-               System.out.println("Please USE, UPPER CASE controls ONLY"); 
+               
+            countEachChar(direction); //method call to count characters
             }
            
           
